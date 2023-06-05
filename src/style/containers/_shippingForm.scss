@@ -1,0 +1,59 @@
+@use '../global.scss' as c;
+
+.shipping-information{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 400px 300px;
+    justify-items: center;
+    justify-content: center;
+    padding: 20px 50px;
+}
+
+.shipping-form-container{
+    padding: 20px;
+    background-color: c.$white;
+}
+
+.shipping-form{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+.input-form{
+    min-width: 300px;
+    padding: 8px;
+    border: 1px solid c.$terteary;
+    border-radius: 5px;
+}
+
+.order-list-container{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    background-color: c.$white;
+}
+
+.order-list-item{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid c.$dark;
+}
+
+.shipping-information-buttons{
+    width: 75%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+@media(max-width: 640px){
+    .shipping-information{
+        grid-template-columns: none;
+    }
+}

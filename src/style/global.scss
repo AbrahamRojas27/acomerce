@@ -1,0 +1,31 @@
+$primary: #d90429;
+$secondary: #ef233c;
+$terteary: #2b2d42;
+$found: #edf2f4;
+$soft-text: #8d99ae;
+$white: #f4f4f4;
+$dark: #1f2124;
+$green: #64df38;
+$red: #ff0000;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: $found;
+}
+
+button{
+    padding: 8px 16px;
+    border: none;
+    background-color: $primary;
+    color: $found;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+ 

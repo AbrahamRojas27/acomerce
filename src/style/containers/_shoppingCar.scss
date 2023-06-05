@@ -1,0 +1,80 @@
+@use '../global.scss' as c;
+
+.shopping-car{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 20px;
+    padding: 20px 80px;
+}
+
+.product-list{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.product-item-content{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.product-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    background-color: c.$white;
+
+}
+
+.product-img{
+    width: 180px;
+    height: 180px;
+    background-color: aqua;
+    img{
+        width: 100%;
+    }
+}
+
+.total-price-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    background-color: c.$white;
+    max-height: 200px;
+}
+
+.total-price-text{
+    font-size: 24px;
+    font-weight: 500;
+    color: c.$terteary;
+    letter-spacing: 4px;
+}
+
+.total-price{
+    font-size: 20px;
+    
+}
+
+.product-quantity{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+@media (max-width: 640px){
+    .shopping-car{
+        grid-template-columns: none;
+        padding: 12px;
+    }
+    .total-price-container{
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 8px 20px;
+    }
+}

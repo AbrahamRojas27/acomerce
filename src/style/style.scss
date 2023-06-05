@@ -1,0 +1,10 @@
+//global
+@forward './global.scss';
+
+//components
+@forward './containers/layout';
+@forward './containers/home';
+@forward './containers/products';
+@forward './containers/shoppingCar';
+@forward './containers/shippingForm';
+@forward './containers/payment'
